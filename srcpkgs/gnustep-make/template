@@ -1,6 +1,6 @@
 # Template file for 'gnustep-make'
 pkgname=gnustep-make
-version=2.9.2
+version=2.9.3
 revision=1
 build_style=gnu-configure
 conf_files="/etc/GNUstep/GNUstep.conf"
@@ -10,7 +10,7 @@ maintainer="Toyam Cox <Vaelatern@gmail.com>"
 license="GPL-3.0-or-later"
 homepage="http://www.gnustep.org"
 distfiles="http://ftp.gnustep.org/pub/gnustep/core/${pkgname}-${version}.tar.gz"
-checksum=f540df9f0e1daeb3d23b08e14b204b2a46f1d0a4005cb171c95323413806e4e1
+checksum=93ca320b706279ebca53760da89d4c3f2bbc547f4723967140a34346d9f04c24
 
 post_install() {
 	sed -i 's,/builddir/.xbps-gnustep-make/wrappers,/usr/bin,g' ${DESTDIR}/usr/share/GNUstep/Makefiles/config.make
